@@ -7,7 +7,7 @@ export default async function Page({ params }: { params: { id: string } }) {
     const [invoice, customers] = await Promise.all([
         fetchInvoiceById(id),
         fetchCustomers(),
-      ]);
+    ]);
     return (
         <main>
         <Breadcrumbs

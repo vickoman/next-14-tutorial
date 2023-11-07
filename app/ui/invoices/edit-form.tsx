@@ -15,7 +15,7 @@ export default function EditInvoiceForm({
   invoice,
   customers,
 }: {
-  invoice: InvoiceForm;
+  invoice: InvoiceForm | undefined;
   customers: CustomerField[];
 }) {
   // console.log(invoice);
